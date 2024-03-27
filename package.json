@@ -1,0 +1,30 @@
+{
+  "name": "oop-typescript",
+  "version": "1.0.0",
+  "description": "object oriented programing with typescript",
+  "main": "script.js",
+  "author": "Alliano",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "ts": "rm -rf ./dist/ tsc --watch",
+    "dev": "nodemon ./dist/script.js"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.[t|j]sx?$": "babel-jest"
+    }
+  },
+  "dependencies": {
+    "typescript": "^5.4.3"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.24.3",
+    "@babel/preset-typescript": "^7.24.1",
+    "@jest/globals": "^29.7.0",
+    "@types/jest": "^29.5.12",
+    "babel-jest": "^29.7.0",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.2"
+  }
+}
